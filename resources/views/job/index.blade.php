@@ -10,20 +10,21 @@
 
         <div>
           <div class="mb-1 font-semibold">Search</div>
-          <x-text-input name="search" value="" placeholder="Search for any text" />
+          <x-text-input name="search" value="{{ request('search') }}"
+            placeholder="Search for any text" />
         </div>
 
         <div>
           <div class="mb-1 font-semibold">Salary</div>
           <div class="flex space-x-2">
-            <x-text-input name="min_salary" value="" placeholder="From" />
-            <x-text-input name="max_salary" value="" placeholder="To" />
+            <x-text-input name="min_salary" value="{{ request('min_salary') }}" placeholder="From" />
+            <x-text-input name="max_salary" value="{{ request('max_salary') }}" placeholder="To" />
           </div>
         </div>
 
         <div>3</div>
         <div>4</div>
-        
+
       </div>
       <button class="w-full">Filter</button>
     </form>
