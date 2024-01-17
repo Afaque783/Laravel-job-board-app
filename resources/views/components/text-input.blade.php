@@ -1,5 +1,5 @@
 <div class="relative">
-  @if (formRef)
+  @if ($formRef)
     <button type="button" class="absolute top-0 right-0 flex h-full items-center pr-2"
     @click="$refs['input-{{ $name }}'].value = ''; $refs['{{ $formRef }}'].submit();">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
